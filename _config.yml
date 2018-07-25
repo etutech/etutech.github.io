@@ -80,3 +80,5 @@ friends: [
         href: "https://cichang001.com"
     }
 ]
+
+theme: jekyll-theme-cayman

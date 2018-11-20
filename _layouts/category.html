@@ -1,11 +1,44 @@
 ---
 layout: default
 ---
-<div class="blog list">
-  <h1>Filed Under <small>#{{ page.tag }}</small></h1>
-  <ul>
-  {% for post in site.categories[page.tag] %}
-    <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
-  {% endfor %}
-  </ul>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ site.header-img }}')">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+              <div class="site-heading">
+                <h1>{{page.tag}}</h1>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="
+      col-lg-8 col-lg-offset-1
+      col-md-8 col-md-offset-1
+      col-sm-12
+      col-xs-12
+      post-container
+    ">
+      <h2>Category: <small>{{ page.tag }}</small></h2>
+      <ul>
+      {% for post in site.categories[page.tag] %}
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="
+        col-lg-3 col-lg-offset-0
+        col-md-3 col-md-offset-0
+        col-sm-12
+        col-xs-12
+        sidebar-container
+    "> 
+      {% include sider.html %}
+    </div>
+  </div>
 </div>

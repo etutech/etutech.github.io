@@ -10,4 +10,4 @@ $ bundle install
   bundle exec jekyll serve
 ```
 
-浏览器访问 🌎 http://localhost:4000
+浏览器访问 🌎 http://localhost:4000

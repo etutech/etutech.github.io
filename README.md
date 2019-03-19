@@ -1,3 +1,8 @@
+## ETU 技术团队 Blog
+
+### 网址
+[etutech.github.io](https://etutech.github.io)
+
 ### 安装
 ``` bash
 $ git clone https://github.com/etutech/etutech.github.io.git
